@@ -21,13 +21,13 @@ function makeGalleryMarkup() {
     .join('');
 }
 
-// function makeClickImg(galleryItems) {
-//   galleryItems.preventDefault();
-//   if (galleryItems.target.nodeName !== 'IMG') {
-//     return;
-//   }
-//   let gallery = new SimpleLightbox('.gallery a');
-//   gallery.on('show.simplelightbox', function () {
-//     gallery.defaultOptions.captionDelay = 250;
-//   });
-// }
+function makeClickImg(galleryItems) {
+  galleryItems.preventDefault();
+  if (galleryItems.target.nodeName !== 'IMG') {
+    return;
+  }
+  let gallery = new SimpleLightbox('.gallery a');
+  gallery.on('show.simplelightbox', function () {
+    gallery.defaultOptions.captionDelay = 250;
+  });
+}
