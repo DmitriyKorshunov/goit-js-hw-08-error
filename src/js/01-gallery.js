@@ -1,7 +1,7 @@
 // Add imports above this line
 import { galleryItems } from './gallery-items';
 // Change code below this line
-import SimpleLightbox from 'simplelightbox';
+const SimpleLightbox = require('simplelightbox');
 
 console.log(galleryItems);
 const linkGallery = document.querySelector('.gallery');
@@ -26,8 +26,8 @@ function makeClickImg(galleryItems) {
   if (galleryItems.target.nodeName !== 'IMG') {
     return;
   }
-  let gallery = new SimpleLightbox('.gallery a');
-  gallery.on('show.simplelightbox', function () {
-    gallery.defaultOptions.captionDelay = 250;
-  });
+  // let gallery = new SimpleLightbox('.gallery a');
+  // gallery.on('show.simplelightbox', function () {
+  //   gallery.defaultOptions.captionDelay = 250;
+  // });
 }
